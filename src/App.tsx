@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import Filters from "./components/Filters";
 import Characters from "./pages/Characters";
+import PipelineFunnelChart from "./components/PipelineFunnelChart";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { teal, deepPurple, deepOrange } from "@mui/material/colors";
@@ -51,6 +52,7 @@ const App = () => {
           <Header setColorIndex={setColorIndex} setMode={setMode} mode={mode} />
           <Stack overflow={"scroll"} py={2}>
             <Container>
+              <PipelineFunnelChart />
               <Filters />
               <Characters />
             </Container>
